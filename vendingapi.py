@@ -1,4 +1,4 @@
-from .model import Product
+from model import Product
 import sqlite3
 
 class VendingMachine:
