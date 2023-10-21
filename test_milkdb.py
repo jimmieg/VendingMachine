@@ -2,7 +2,7 @@ import unittest
 from model import Product
 import sqlite3
 from prettytable import PrettyTable
-from temp import (
+from milkdb import (
     create_product,
     get_products,
     get_product,
@@ -187,7 +187,7 @@ class TestDatabase(unittest.TestCase):
         # Call the display_inventory_table method
         result = display_inventory_table(self.conn)
 
-        # Print the message
+        # Print the title of the table
         print(result["message"])
 
         # Print the table

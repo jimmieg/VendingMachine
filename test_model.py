@@ -26,8 +26,8 @@ class TestProduct(unittest.TestCase):
 
     def test_create_basic_name(self):
         #Name == "Greek Yogurt"
-        result = Product.create_basic(product_name="Greek Yogurt", price=5.99)
-        self.assertEqual(result.product_name, "Greek Yogurt")
+        result = Product.create_basic(product_name="Orange Juice", price=5.99)
+        self.assertEqual(result.product_name, "Orange Juice")
 
         #Edge cases
         self.assertNotEqual(result.product_name, "")
@@ -44,7 +44,7 @@ class TestProduct(unittest.TestCase):
 
     def test_create_with_quantity(self):
         #Quanity == 10
-        result = Product.create_with_quantity(product_name="Bread", price=2.50, quantity=10)
+        result = Product.create_with_quantity(product_name="Lays Chips", price=2.50, quantity=10)
         self.assertEqual(result.quantity, 10)
 
         #Edge cases
